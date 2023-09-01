@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCounter</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logocc" src="img/EletriCCalcuL-removebg-preview.png" alt="cc" width="120" height="70s">
+        <!-- <h1>EletriCCalcuL</h1> -->
+    </header>
+
+    <main>
+        <form id="form" novalidate>
+            <section class="inputs-container">
+                <div class="form-group">
+                    <label for="Potencia">W (Watts) do dispositivo usado*</label>
+                    <input
+                        type="number"
+                        placeholder="20W"
+                        id="Potencia"
+                        name="Potencia"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="Horas">Hora(s) usada(s) no mês*</label>
+                    <input
+                        type="number"
+                        placeholder="100 horas"
+                        id="Horas"
+                        name="Horas"
+                    >
+
+                    <div class="form-group">
+                        <label for="kWh">kWh* (Se não sabe qual é o "R$/kWh" na sua cidade clique<a href="file:///F:/projetos/index.html">Aqui)</a></label>
+			<select id="kWh" name="cidades" required="required">
+			<option value="">Selecione sua cidade</option>
+			<option value="890">Praia Grande</option>
+			<option value="880">Cubatão</option>
+			<option value="800">Santos</option>
+			<option value="656">São Paulo</option>
+			<option value="850">São Vicente</option>
+			<option value="840">Mongágua</option>
+			<option value="860">Itanhaém</option>
+			<option value="870">Peruíbe</option>
+</select>
+                        
+                </div>
+            </section>
+
+                <button type="submit">Resultado</button>
+
+        </form>
+        <h1 id="Result" style="color: #FFF" ></h1>
+    </main>
+    
+    <footer>
+        <span>
+            &copy; EletriCCalcuL, 2023. Todos os direitos reservados. Projeto realizado por alunos do 1° ano do ensino médio com técnico em informática.
+        </span>
+    </footer>
+
+</body>
+<script src="./script.js"></script>
+</html>

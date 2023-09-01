@@ -1,0 +1,21 @@
+header {
+    width: 100%;
+    background-color: #FFF033;
+    padding-left: 20px;
+    /* margin-bottom: 100px; */
+
+}
+
+header h1 {
+    color: black;
+    font-size: 3em;
+    cursor: pointer;
+    text-align: center;
+}
+
+header img {
+    align-items: center;
+    margin-left: 68vh;
+    width: auto;
+    height: 120px;
+}
